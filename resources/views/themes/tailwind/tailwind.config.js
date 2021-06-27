@@ -5,6 +5,7 @@ module.exports = {
         './assets/**/*.scss',
         './assets/**/*.js',
       ],
+    darkMode: 'class',
     theme: {
         extend: {
             rotate: {

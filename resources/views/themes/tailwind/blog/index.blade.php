@@ -10,10 +10,10 @@
     <div class="relative mx-auto max-w-7xl">
 		<div class="flex flex-col justify-start">
 			<h1 class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-				Our Awesome Blog
+				News
 			</h1>
 			<p class="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
-				Check out some of our latest blog posts below.
+            Important news of the contests and information about updates to the rules are published here.
 			</p>
 			<ul class="flex self-start inline w-auto px-3 py-1 mt-3 text-xs font-medium text-gray-600 bg-blue-100 rounded-md">
 				<li class="mr-4 font-bold text-blue-600 uppercase">Categories:</li>
@@ -86,10 +86,6 @@
 
 	<div class="flex justify-center my-10">
 		{{ $posts->links('theme::partials.pagination') }}
-		<!--li class="uk-active"><span aria-current="page" class="page-numbers current">1</span></li>
-		<li><a class="page-numbers" href="https://demo.yootheme.com/themes/wordpress/2017/copper-hill/?paged=2&amp;page_id=92">2</a></li>
-		<li><a class="next page-numbers" href="https://demo.yootheme.com/themes/wordpress/2017/copper-hill/?paged=2&amp;page_id=92"><span uk-pagination-next="" class="uk-pagination-next uk-icon"><svg width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg" ratio="1"><polyline fill="none" stroke="#000" stroke-width="1.2" points="1 1 6 6 1 11"></polyline></svg></span></a></li-->
-	</ul>
 
 </div>
 
