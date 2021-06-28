@@ -2,28 +2,64 @@
 
 @section('content')
 
-<div class="grid grid-cols-2 gap-6 my-6 px-4 md:px-6 lg:px-8">
-    
-		<div class="flex w-full max-w-xs p-4 bg-white">
+<div class="flex flex-col px-8 mx-auto my-6 lg:flex-row max-w-7xl xl:px-5">
+<div class="flex w-full max-w-xs p-8 bg-white flex overflow-hidden bg-white lg:mr-3 lg:mb-0">
+<select class="w-full border bg-white rounded px-3 py-2 outline-none">
+    <option class="py-1">Option 1</option>
+    <option class="py-1">Option 2</option>
+    <option class="py-1">Option 3</option>
+</select>
+<select class="w-full border bg-white rounded px-3 py-2 outline-none">
+    <option class="py-1">Option 1</option>
+    <option class="py-1">Option 2</option>
+    <option class="py-1">Option 3</option>
+</select>
+<button type="button" class="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-gray-200 rounded px-4 py-2">Go</button>
+</div>
+
+</div>
+
+<div class="flex flex-col px-8 mx-auto my-6 lg:flex-row max-w-7xl xl:px-5">
+<div class="flex w-full max-w-xs p-8 bg-white flex overflow-hidden bg-white lg:mr-3 lg:mb-0">
 			<ul class="flex flex-col w-full">
 				<li class="my-px">
-					<span class="flex font-medium text-sm text-gray-400 px-4 my-4 uppercase">Projects</span>
+					<span class="flex font-medium text-sm text-gray-400 px-4 my-4 uppercase">Contests categories</span>
 				</li>
 				<li class="my-px">
 					<a href="#"
 					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
 						<span class="flex items-center justify-center text-lg text-gray-400">
-							<svg fill="none"
-								 stroke-linecap="round"
-								 stroke-linejoin="round"
-								 stroke-width="2"
-								 viewBox="0 0 24 24"
-								 stroke="currentColor"
-								 class="h-6 w-6">
-								<path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
-							</svg>
+                        <img class="rounded-full h-8 w-8 object-cover" src="https://images.unsplash.com/photo-1520065786657-b71a007dd8a5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80" alt="">
 						</span>
-						<span class="ml-3">Manager</span>
+						<span class="ml-3">Web & Design Contests</span>
+					</a>
+				</li>
+                <li class="my-px">
+					<a href="#"
+					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
+						<span class="flex items-center justify-center text-lg text-gray-400">
+                        <img class="rounded-full h-8 w-8 object-cover" src="https://images.unsplash.com/photo-1520065786657-b71a007dd8a5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80" alt="">
+						</span>
+						<span class="ml-3">Free TON Wiki</span>
+					</a>
+				</li>
+                <li class="my-px">
+					<a href="#"
+					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
+						<span class="flex items-center justify-center text-lg text-gray-400">
+                        <img class="rounded-full h-8 w-8 object-cover" src="https://images.unsplash.com/photo-1520065786657-b71a007dd8a5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80" alt="">
+						</span>
+						<span class="ml-3">Web & Design Contests</span>
+					</a>
+				</li>
+                <li class="my-px">
+					<a href="#"
+					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
+						<span class="flex items-center justify-center text-lg text-gray-400">
+                        <img class="rounded-full h-8 w-8 object-cover" src="https://images.unsplash.com/photo-1520065786657-b71a007dd8a5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80" alt="">
+						</span>
+						<span class="ml-3">Free TON Wiki</span>
+                        <span class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">3</span>
 					</a>
 				</li>
 				<li class="my-px">
@@ -58,7 +94,7 @@
 							</svg>
 						</span>
 						<span class="ml-3">Clients</span>
-						<span class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">1k</span>
+						<span class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">1</span>
 					</a>
 				</li>
 				<li class="my-px">
@@ -79,88 +115,19 @@
 					</a>
 				</li>
 				<li class="my-px">
-					<span class="flex font-medium text-sm text-gray-400 px-4 my-4 uppercase">Account</span>
+					<span class="flex font-medium text-sm text-gray-400 px-4 my-4 uppercase">Tags</span>
 				</li>
-				<li class="my-px">
-					<a href="#"
-					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
-						<span class="flex items-center justify-center text-lg text-gray-400">
-							<svg fill="none"
-								 stroke-linecap="round"
-								 stroke-linejoin="round"
-								 stroke-width="2"
-								 viewBox="0 0 24 24"
-								 stroke="currentColor"
-								 class="h-6 w-6">
-								<path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-							</svg>
-						</span>
-						<span class="ml-3">Profile</span>
-					</a>
-				</li>
-				<li class="my-px">
-					<a href="#"
-					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
-						<span class="flex items-center justify-center text-lg text-gray-400">
-							<svg fill="none"
-								 stroke-linecap="round"
-								 stroke-linejoin="round"
-								 stroke-width="2"
-								 viewBox="0 0 24 24"
-								 stroke="currentColor"
-								 class="h-6 w-6">
-								<path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
-							</svg>
-						</span>
-						<span class="ml-3">Notifications</span>
-						<span class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">10</span>
-					</a>
-				</li>
-				<li class="my-px">
-					<a href="#"
-					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
-						<span class="flex items-center justify-center text-lg text-gray-400">
-							<svg fill="none"
-								 stroke-linecap="round"
-								 stroke-linejoin="round"
-								 stroke-width="2"
-								 viewBox="0 0 24 24"
-								 stroke="currentColor"
-								 class="h-6 w-6">
-								<path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-								<path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-							</svg>
-						</span>
-						<span class="ml-3">Settings</span>
-					</a>
-				</li>
-				<li class="my-px">
-					<a href="#"
-					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
-						<span class="flex items-center justify-center text-lg text-red-400">
-							<svg fill="none"
-								 stroke-linecap="round"
-								 stroke-linejoin="round"
-								 stroke-width="2"
-								 viewBox="0 0 24 24"
-								 stroke="currentColor"
-								 class="h-6 w-6">
-								<path d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
-							</svg>
-						</span>
-						<span class="ml-3">Logout</span>
-					</a>
-				</li>
+
 			</ul>
 		</div>
 
-    <div class="grid grid-cols-2 gap-6 my-6 px-4 md:px-6 lg:px-8">    
+    <div class="grid grid-cols-2 col-span-4 gap-6 my-6 px-4 md:px-6 lg:px-8">    
     <div class="max-w-l mx-auto px-4 py-4 bg-white shadow-md rounded-lg">
       <div class="py-2 flex flex-row items-center justify-between">
         <div class="flex flex-row items-center">
           <a href="#" class="flex flex-row items-center focus:outline-none focus:shadow-outline rounded-lg">
             <img class="rounded-full h-8 w-8 object-cover" src="https://images.unsplash.com/photo-1520065786657-b71a007dd8a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80" alt="">
-            <p class="ml-2 text-base font-medium">Jon Doe</p>
+            <p class="ml-2 text-base font-medium">Web & Design Contests</p>
           </a>
         </div>
         <div class="flex flex-row items-center">
@@ -185,7 +152,7 @@
         </div>
       </div>
       <div class="py-2">
-        <p class="leading-snug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ratione dicta deleniti, quas distinctio, veniam quo rem eveniet aliquid repudiandae fuga asperiores reiciendis tenetur? Eius quidem impedit et soluta accusamus.</p>
+        <p class="leading-snug">Web & Design – Identity contest</p>
       </div>
     </div>
     <div class="max-w-l mx-auto px-4 py-4 bg-white shadow-md rounded-lg">
@@ -193,7 +160,7 @@
         <div class="flex flex-row items-center">
           <a href="#" class="flex flex-row items-center focus:outline-none focus:shadow-outline rounded-lg">
             <img class="rounded-full h-8 w-8 object-cover" src="https://images.unsplash.com/photo-1520065786657-b71a007dd8a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80" alt="">
-            <p class="ml-2 text-base font-medium">Jon Doe</p>
+            <p class="ml-2 text-base font-medium">Web & Design Contests</p>
           </a>
         </div>
         <div class="flex flex-row items-center">
@@ -218,7 +185,7 @@
         </div>
       </div>
       <div class="py-2">
-        <p class="leading-snug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ratione dicta deleniti, quas distinctio, veniam quo rem eveniet aliquid repudiandae fuga asperiores reiciendis tenetur? Eius quidem impedit et soluta accusamus.</p>
+        <p class="leading-snug">Contest: Free TON Video Explanation [UPD]</p>
       </div>
     </div>
     <div class="max-w-l mx-auto px-4 py-4 bg-white shadow-md rounded-lg">
@@ -226,7 +193,7 @@
         <div class="flex flex-row items-center">
           <a href="#" class="flex flex-row items-center focus:outline-none focus:shadow-outline rounded-lg">
             <img class="rounded-full h-8 w-8 object-cover" src="https://images.unsplash.com/photo-1520065786657-b71a007dd8a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80" alt="">
-            <p class="ml-2 text-base font-medium">Jon Doe</p>
+            <p class="ml-2 text-base font-medium">Web & Design Contests</p>
           </a>
         </div>
         <div class="flex flex-row items-center">
@@ -251,7 +218,7 @@
         </div>
       </div>
       <div class="py-2">
-        <p class="leading-snug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ratione dicta deleniti, quas distinctio, veniam quo rem eveniet aliquid repudiandae fuga asperiores reiciendis tenetur? Eius quidem impedit et soluta accusamus.</p>
+        <p class="leading-snug">Logo of Free TON in coinmarkecap and brand identity</p>
       </div>
     </div>
     <div class="max-w-l mx-auto px-4 py-4 bg-white shadow-md rounded-lg">
@@ -259,7 +226,7 @@
         <div class="flex flex-row items-center">
           <a href="#" class="flex flex-row items-center focus:outline-none focus:shadow-outline rounded-lg">
             <img class="rounded-full h-8 w-8 object-cover" src="https://images.unsplash.com/photo-1520065786657-b71a007dd8a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80" alt="">
-            <p class="ml-2 text-base font-medium">Jon Doe</p>
+            <p class="ml-2 text-base font-medium">Web & Design Contests</p>
           </a>
         </div>
         <div class="flex flex-row items-center">
@@ -284,7 +251,7 @@
         </div>
       </div>
       <div class="py-2">
-        <p class="leading-snug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ratione dicta deleniti, quas distinctio, veniam quo rem eveniet aliquid repudiandae fuga asperiores reiciendis tenetur? Eius quidem impedit et soluta accusamus.</p>
+        <p class="leading-snug">Proposal: Reward extraTON for multisig solution</p>
       </div>
     </div>
 </div>
