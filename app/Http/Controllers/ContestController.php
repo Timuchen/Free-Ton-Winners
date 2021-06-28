@@ -57,9 +57,9 @@ class ContestController extends Controller
         return redirect('/home')->with('success','Contest updated successfully!');
     }
 
-    // public function destroy(Contest $contest)
-    // {
-    //     $contest->delete();
-    //     return redirect('/home')->with('success','Contest deleted successfully!');
-    // }
+    public function destroy(Contest $contest)
+    {
+        $contest->delete();
+        return redirect('/home')->with('success','Contest deleted successfully!');
+    }
 }

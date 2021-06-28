@@ -3,35 +3,35 @@
 @section('content')
 
 <div class="flex flex-col px-8 mx-auto my-6 lg:flex-row max-w-7xl xl:px-5">
-<div class="flex w-full max-w-xs p-8 bg-white flex overflow-hidden bg-white lg:mr-3 lg:mb-0">
-<select class="w-full border bg-white rounded px-3 py-2 outline-none">
-    <option class="py-1">Option 1</option>
-    <option class="py-1">Option 2</option>
-    <option class="py-1">Option 3</option>
-</select>
-<select class="w-full border bg-white rounded px-3 py-2 outline-none">
-    <option class="py-1">Option 1</option>
-    <option class="py-1">Option 2</option>
-    <option class="py-1">Option 3</option>
-</select>
-<button type="button" class="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-gray-200 rounded px-4 py-2">Go</button>
+<div class="flex flex-col justify-start">
+			<h1 class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+				Free TON contests
+			</h1>
+			<p class="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
+      The best works of contests Free TON. We have collected all the work of value to the community in one place.
+			</p>
+      <ul class="flex self-start inline w-auto px-3 py-1 mt-3 text-xs font-medium text-gray-600 bg-blue-100 rounded-md">
+				<li class="mr-4 font-bold text-blue-600 uppercase">Category:</li>
+        <li class="text-blue-700"><a href="">Contests</a></li>
+        <li class="mx-2">&middot;</li>
+				<li class="">Web & Design Contests</li>
+			</ul>
+		</div>  
 </div>
-
-</div>
-
+</br>
 <div class="flex flex-col px-8 mx-auto my-6 lg:flex-row max-w-7xl xl:px-5">
-<div class="flex w-full max-w-xs p-8 bg-white flex overflow-hidden bg-white lg:mr-3 lg:mb-0">
+<div id="crossing" class="flex flex-col justify-start w-full lg:mr-3 lg:mb-0">
 			<ul class="flex flex-col w-full">
 				<li class="my-px">
 					<span class="flex font-medium text-sm text-gray-400 px-4 my-4 uppercase">Contests categories</span>
 				</li>
 				<li class="my-px">
-					<a href="#"
+					<a href="/contests"
 					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
 						<span class="flex items-center justify-center text-lg text-gray-400">
                         <img class="rounded-full h-8 w-8 object-cover" src="https://images.unsplash.com/photo-1520065786657-b71a007dd8a5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80" alt="">
 						</span>
-						<span class="ml-3">Web & Design Contests</span>
+						<span class="ml-3">Free TON Governance</span>
 					</a>
 				</li>
                 <li class="my-px">
@@ -40,7 +40,7 @@
 						<span class="flex items-center justify-center text-lg text-gray-400">
                         <img class="rounded-full h-8 w-8 object-cover" src="https://images.unsplash.com/photo-1520065786657-b71a007dd8a5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80" alt="">
 						</span>
-						<span class="ml-3">Free TON Wiki</span>
+						<span class="ml-3">A&S Subgovernance</span>
 					</a>
 				</li>
                 <li class="my-px">
@@ -66,14 +66,14 @@
 					<a href="#"
 					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
 						<span class="flex items-center justify-center text-lg text-gray-400">
-							<svg fill="none"
+            <svg fill="none"
 								 stroke-linecap="round"
 								 stroke-linejoin="round"
 								 stroke-width="2"
 								 viewBox="0 0 24 24"
 								 stroke="currentColor"
 								 class="h-6 w-6">
-								<path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+								<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
 							</svg>
 						</span>
 						<span class="ml-3">Tasks</span>
@@ -97,8 +97,15 @@
 						<span class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">1</span>
 					</a>
 				</li>
+        <li id="control" class="flex items-center justify-center text-sm text-gray-500 font-semibold hover:bg-blue-100 h-6 px-2 rounded-full">↓ Show all categories...</li>
+			</ul>
+      </br>
+      <ul class="flex flex-col w-full">
+      <li class="my-px">
+					<span class="flex font-medium text-sm text-gray-400 px-4 my-4 ">Publisher menu</span>
+				</li>
 				<li class="my-px">
-					<a href="#"
+					<a href="/contests/create"
 					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
 						<span class="flex items-center justify-center text-lg text-green-400">
 							<svg fill="none"
@@ -111,17 +118,24 @@
 								<path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
 							</svg>
 						</span>
-						<span class="ml-3">Add new</span>
+						<span class="ml-3">Add new contest</span>
 					</a>
 				</li>
-				<li class="my-px">
-					<span class="flex font-medium text-sm text-gray-400 px-4 my-4 uppercase">Tags</span>
+        <a href="/category/create"
+					   class="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100">
+						<span class="flex items-center justify-center text-lg text-gray-400">
+            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+								<path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+							</svg>
+						</span>
+						<span class="ml-3">Add new category</span>
+					</a>
 				</li>
 
 			</ul>
 		</div>
 
-    <div class="grid grid-cols-2 col-span-4 gap-6 my-6 px-4 md:px-6 lg:px-8">    
+    <div class="grid sm:grid-cols-2 col-span-4 gap-6 my-6 px-4 md:px-6 lg:px-8">    
     <div class="max-w-l mx-auto px-4 py-4 bg-white shadow-md rounded-lg">
       <div class="py-2 flex flex-row items-center justify-between">
         <div class="flex flex-row items-center">
@@ -255,5 +269,33 @@
       </div>
     </div>
 </div>
+<style>
+  #control{
+    text-align:center;
+  }
+  #crossing ul li:nth-child(n+6) {
+  display:none;
+}
 
+#crossing.expand ul li:nth-child(n+6) {
+  display:list-item;
+}
+
+#crossing ul li#control {
+  display:list-item;
+  margin-top: 15px;
+  cursor:pointer;
+}
+</style>
+<script>
+  document.getElementById('control').onclick = function(){
+  document.getElementById("crossing").classList.toggle("expand");
+  if (document.getElementById('control').innerHTML != '↑ Roll up'){
+    document.getElementById('control').innerHTML = '↑ Roll up';
+  }else{
+    document.getElementById('control').innerHTML = '↓ Show all categories...';
+  }
+  
+}
+</script>
 @endsection
