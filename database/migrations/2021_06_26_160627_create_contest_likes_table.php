@@ -15,6 +15,10 @@ class CreateContestLikesTable extends Migration
     {
         Schema::create('contest_likes', function (Blueprint $table) {
             $table->id();
+
+            $table->unsignedBigInteger('user_id');
+            $table->string('like');
+            
             $table->timestamps();
         });
     }

@@ -18,12 +18,11 @@ class CreateContestCommentsTable extends Migration
 
             $table->text('text');
 
+            $table->unsignedBigInteger('contest_id');
+            $table->unsignedBigInteger('user_id');
+
             $table->foreign('contest_id')
             ->references('id')->on('contests')
-            ->onDelete('cascade');
-
-            $table->foreign('user_id')
-            ->references('id')->on('users')
             ->onDelete('cascade');
 
             $table->timestamps();

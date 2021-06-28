@@ -17,24 +17,27 @@ class CreateContestWinnersTable extends Migration
             $table->id();
 
             $table->string('title');
+            $table->float('ranking');
             $table->text('description')->nullable();
             $table->float('total_points')->nullable();
             $table->float('avg_points')->nullable();
-            $table->integer('jurors_voted')->nullable();
+            $table->float('jurors_voted')->nullable();
             $table->text('jury_comment')->nullable();
-            $table->integer('accepted')->nullable();
-            $table->integer('abstained')->nullable();
-            $table->integer('rejected')->nullable();
+            $table->float('accepted')->nullable();
+            $table->float('abstained')->nullable();
+            $table->float('rejected')->nullable();
             $table->string('image')->nullable();
             $table->string('file')->nullable();
             $table->string('link')->nullable();
             $table->string('winner_name')->nullable();
             $table->string('source')->nullable();
+            $table->unsignedBigInteger('author_id');
+
+            $table->unsignedBigInteger('contest_id');
+            
             $table->foreign('contest_id')
             ->references('id')->on('contests')
             ->onDelete('cascade');
-
-            $table->string('user_id');
 
             $table->timestamps();
         });

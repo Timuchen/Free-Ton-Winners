@@ -17,6 +17,7 @@ class CreateContestCategoriesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->text('description')->nullable();
+            $table->string('image')->nullable();
             $table->unsignedBigInteger('contest_category_id')->nullable();
             $table->foreign('contest_category_id')->references('id')->on('contest_categories');
             $table->timestamps();

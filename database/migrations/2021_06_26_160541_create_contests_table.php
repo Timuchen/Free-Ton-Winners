@@ -15,6 +15,7 @@ class CreateContestsTable extends Migration
     {
         Schema::create('contests', function (Blueprint $table) {
             $table->id();
+            $table->integer('author_id');
 
             $table->string('title');
             $table->text('description')->nullable();
@@ -26,13 +27,10 @@ class CreateContestsTable extends Migration
             $table->string('to_disquse')->nullable();
             $table->float('total_votes')->nullable();
             $table->float('avg_score')->nullable();
-            $table-string('image')->nullable();
+            $table->string('image')->nullable();
 
-            $table->foreign('user_id')
-            ->references('id')->on('users')
-            ->onDelete('cascade');
-
-            $table->foreign('contest_category_id')
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')
             ->references('id')->on('contest_categories')
             ->onDelete('cascade');
 

@@ -24,7 +24,7 @@
                 <img src="{{ Storage::url('/settings/April2021/play-icon.png') }}" class="hidden-md" style="width:40px; height:40px;">
                 <div class="relative" style="margin-left:14px; text-align:left;">
                     <p style="color:#ffffff; display:block; margin:0px; font-weight:500; font-size:17px; line-height:17px; margin-top:3px; margin-bottom:4px;">Watch & Learn</p>
-                    <p style="display:block; text-align:left; line-height:14px; margin:0px;">Screencasts to learn Wave</p>
+                    <p style="display:block; text-align:left; line-height:14px; margin:0px;">Screencasts to learn Free TON Winners</p>
                 </div>
                 <a href="https://devdojo.com/course/wave" target="_blank" style="cursor:pointer; flex-shrink:0;  justify-self:end; margin-left:auto; background:#fff; color:#ee445d; font-weight:500; padding:10px 20px; border-radius:4px;">
                     Watch Now

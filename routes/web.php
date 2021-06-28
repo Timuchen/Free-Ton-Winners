@@ -20,5 +20,7 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+Route::get('contests', 'ContestController@index')->name('contests');
+
 // Include Wave Routes
 Wave::routes();
