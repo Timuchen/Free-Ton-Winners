@@ -13,4 +13,8 @@ class Contest extends Model
         'id', 'title', 'submission_start', 'submission_end'
     ];
 
+    public function contestCategory()
+    {
+        return $this->belongsTo(ContestCategory::class);
+    }
 }

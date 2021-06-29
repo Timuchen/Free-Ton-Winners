@@ -15,7 +15,6 @@
 // Authentication routes
 Auth::routes();
 
-
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
@@ -27,6 +26,8 @@ Route::post('update', 'ContestController@update')->name('contests.update');
 Route::get('contests/show', 'ContestController@show')->name('contests.show');
 Route::get('contests/edit', 'ContestController@edit')->name('contests.edit');
 Route::get('contests/destroy{id}', 'ContestController@destroy')->name('contests.destroy');
+
+Route::get('contests/category/{id}', 'ContestCategoryController@index')->name('contests');
 
 // Include Wave Routes
 Wave::routes();
