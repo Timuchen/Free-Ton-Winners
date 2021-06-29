@@ -12,7 +12,8 @@
 			</p>
       <ul class="flex self-start inline w-auto px-3 py-1 mt-3 text-xs font-medium text-gray-600 bg-blue-100 rounded-md">
 				<li class="mr-4 font-bold text-blue-600 uppercase">Category:</li>
-        <li class="text-blue-700"><a href="">Contests</a></li>
+        <li class="text-blue-700">
+        <a href="/contests">Contests</a></li>
         <li class="mx-2">&middot;</li>
 				<li class="">Web & Design Contests</li>
 			</ul>

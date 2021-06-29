@@ -1,6 +1,71 @@
 @extends('theme::layouts.app')
 
 @section('content')
+
+<div class="max-w-4xl px-5 mx-auto mt-10 lg:px-0">
+        <a href="{{ route('contests') }}" class="flex items-center mb-6 font-mono text-sm font-bold cursor-pointer text-wave-500">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            back to section
+        </a>
+    </div>
+    <article id="post-{{ $contest->id }}" class="max-w-4xl px-5 mx-auto prose prose-xl lg:prose-2xl lg:px-0">
+    <meta property="name" content="{{ $contest->title }}">
+        <meta property="author" typeof="Person" content="admin">
+        <meta property="dateModified" content="{{ Carbon\Carbon::parse($contest->updated_at)->toIso8601String() }}">
+        <meta class="uk-margin-remove-adjacent" property="datePublished" content="{{ Carbon\Carbon::parse($contest->created_at)->toIso8601String() }}">
+
+        <div class="max-w-4xl mx-auto mt-6">
+
+        <h1 class="flex flex-col leading-none">
+            <span>{{ $contest->title }}</span>
+            <span class="mt-0 mt-10 text-base font-normal">Written on 
+            <time datetime="{{ Carbon\Carbon::parse($contest->created_at)->toIso8601String() }}">{{ Carbon\Carbon::parse($contest->created_at)->toFormattedDateString() }}</time>. 
+            Posted in <a href="/contests/category/{{$category->id}}">{{$category->name}}</a>.</span>
+        </h1>
+       
+        </div>
+        <div class="relative">
+            <img class="w-full h-auto rounded-lg" src="/{{ $contest->image }}" alt="{{ $contest->title }}">
+        </div>
+        <div class="max-w-4xl mx-auto">
+        submission_start
+            {{$contest->submission_start}}
+        </div>
+        <div class="max-w-4xl mx-auto">
+        submission_end
+            {{$contest->submission_end}}
+        </div>
+        <div class="max-w-4xl mx-auto">
+        judging_start
+            {{$contest->judging_start }}
+        </div>
+        <div class="max-w-4xl mx-auto">
+        judging_end
+            {{ $contest->judging_end }}
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+        balance
+            {{ $contest->balance }}
+        </div>
+        <div class="max-w-4xl mx-auto">
+        to_disquse
+            {{ $contest->to_disquse }}
+        </div>
+        <div class="max-w-4xl mx-auto">
+        total_votes
+            {!! $contest->total_votes !!}
+        </div>
+        <div class="max-w-4xl mx-auto">
+        avg_score
+            {!! $contest->avg_score !!}
+        </div>
+    </article>  
+  <div class="max-w-4xl px-5 mx-auto mt-10 lg:px-0">
+  <h3 class="text-4xl font-medium leading-9 text-grey-500">Winners works</h3>  
+  </div>
+
+<div class="max-w-4xl px-5 mx-auto mt-10 lg:px-0">
   <div class="antialiased mx-auto max-w-screen-sm">
   <h3 class="mb-4 text-lg font-semibold text-gray-900">Comments</h3>
 
@@ -75,5 +140,6 @@
     </div>
   </div>
 </div>
-
+</div>
+<br>
 @endsection

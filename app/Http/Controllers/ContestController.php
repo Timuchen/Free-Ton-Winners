@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Contest;
+use App\ContestCategory;
 
 class ContestController extends Controller
 {
@@ -17,48 +18,28 @@ class ContestController extends Controller
     {
         return view('contests.create');
     }
-    
+
     public function store(Request $request)
     {
         $request->validate([
             'title' => 'required',
-            'submission_start' => 'required',
-            'submission_end' => 'required',
-            'judging_start' => 'required',
-            'judging_end' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'body' => 'required',
             ]);
         $contest = new Contest();
         $contest->title = $request->title;
-        $contest->description = $request->description;
-        $contest->submission_end = $request->submission_end;
-        $contest->judging_start = $request->judging_start;
-        $contest->judging_end = $request->judging_end;
-        $contest->balance = $request->balance;
-        $contest->to_disquse = $request->to_disquse;
-        $contest->total_votes = $request->total_votes;
-        $contest->avg_score = $request->avg_score;
-
-        if ($request->hasFile('image')){
-            $datePrefix = new DateTime();
-            $datePrefix = $datePrefix->format('y/m/d/');
-            $file = $request->file('image');
-            $upload_folder = '/public/uploads/' . $datePrefix;
-            $fileName = $file->getClientOriginalName();
-            $file->move(public_path().$upload_folder, $fileName);
-        }
-        
-        $contest->avg_score = $request->avg_score;
-
+        $contest->body = $request->body;
         $contest->published_at = $request->published_at;
 
         $contest->save();
         return redirect('/home')->with('success','Contest created successfully!');
     }
 
-    public function show(Contest $contest)
+    public function show($id)
     {
-        return view('contests.show', compact('contest'));
+        $contest = Contest::find($id);
+        $contestCatId = $contest->first()->contest_category_id;
+        $category = ContestCategory::where('id', '=', $contestCatId)->firstOrFail();
+        return view('contests.show', compact('contest', 'category'));
     }
 
     public function edit(Contest $contest)

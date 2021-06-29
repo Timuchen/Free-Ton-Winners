@@ -10,7 +10,7 @@ class Contest extends Model
     use HasFactory;
 
     protected $fillable = [
-        'id', 'title', 'submission_start', 'submission_end'
+        'id', 'title',
     ];
 
     public function contestCategory()
