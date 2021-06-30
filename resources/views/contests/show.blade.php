@@ -27,38 +27,42 @@
         <div class="relative">
             <img class="w-full h-auto rounded-lg" src="/{{ $contest->image }}" alt="{{ $contest->title }}">
         </div>
-        <div class="max-w-4xl mx-auto">
-        submission_start
-            {{$contest->submission_start}}
-        </div>
-        <div class="max-w-4xl mx-auto">
-        submission_end
-            {{$contest->submission_end}}
-        </div>
-        <div class="max-w-4xl mx-auto">
-        judging_start
-            {{$contest->judging_start }}
-        </div>
-        <div class="max-w-4xl mx-auto">
-        judging_end
-            {{ $contest->judging_end }}
-        </div>
+        
+
+ 
 
         <div class="max-w-4xl mx-auto">
-        balance
-            {{ $contest->balance }}
+        <span class="mt-0 mt-10 text-base font-normal">Submission start 
+            <time datetime="{{ Carbon\Carbon::parse($contest->submission_start)->toIso8601String() }}">{{ Carbon\Carbon::parse($contest->submission_start)->diffForHumans() }}</time>. 
+        </span>
+        &middot;
+        <span class="mt-0 mt-10 text-base font-normal">Submission end 
+            <time datetime="{{ Carbon\Carbon::parse($contest->submission_start)->toIso8601String() }}">{{ Carbon\Carbon::parse($contest->submission_start)->diffForHumans() }}</time>. 
+        </span>
         </div>
         <div class="max-w-4xl mx-auto">
-        to_disquse
-            {{ $contest->to_disquse }}
+        <span class="mt-0 mt-10 text-base font-normal">Judging start 
+            <time datetime="{{ Carbon\Carbon::parse($contest->submission_start)->toIso8601String() }}">{{ Carbon\Carbon::parse($contest->judging_start)->diffForHumans() }}</time>. 
+        </span>
+        &middot;
+        <span class="mt-0 mt-10 text-base font-normal">Judging end 
+            <time datetime="{{ Carbon\Carbon::parse($contest->submission_start)->toIso8601String() }}">{{ Carbon\Carbon::parse($contest->judging_end)->diffForHumans() }}</time>. 
+        </span>
+        </div>
+        <p class="text-base font-normal">
+        {!! $contest->description !!}
+        </p>
+        <div class="max-w-4xl mx-auto">
+        Balance: {{ $contest->balance }}
         </div>
         <div class="max-w-4xl mx-auto">
-        total_votes
-            {!! $contest->total_votes !!}
+        To disquse {{ $contest->to_disquse }}
         </div>
         <div class="max-w-4xl mx-auto">
-        avg_score
-            {!! $contest->avg_score !!}
+        total_votes {!! $contest->total_votes !!}
+        </div>
+        <div class="max-w-4xl mx-auto">
+        avg_score {!! $contest->avg_score !!}
         </div>
     </article>  
   <div class="max-w-4xl px-5 mx-auto mt-10 lg:px-0">
