@@ -21,6 +21,8 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::get('contests', 'ContestController@index')->name('contests');
 Route::get('contests/create', 'ContestController@create')->name('contests.create');
+Route::get('contests/{id}/winners', 'ContestWinnerController@create')->name('contests.winners.create');
+
 Route::post('contests/store', 'ContestController@store')->name('contests.store');
 Route::post('update', 'ContestController@update')->name('contests.update');
 Route::get('contests/show/{id}', 'ContestController@show')->name('contests.show');

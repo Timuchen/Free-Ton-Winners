@@ -19,6 +19,7 @@ class CreateContestsTable extends Migration
 
             $table->string('title');
             $table->text('description')->nullable();
+
             $table->date('submission_start')->nullable();
             $table->date('submission_end')->nullable();
             $table->date('judging_start')->nullable();
@@ -33,7 +34,6 @@ class CreateContestsTable extends Migration
             $table->foreign('contest_category_id')
             ->references('id')->on('contest_categories')
             ->onDelete('cascade');
-
 
             $table->timestamps();
         });

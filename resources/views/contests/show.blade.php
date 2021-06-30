@@ -68,10 +68,43 @@
   <div class="max-w-4xl px-5 mx-auto mt-10 lg:px-0">
   <h3 class="text-4xl font-medium leading-9 text-grey-500">Winners works</h3>  
   </div>
+  <div class="max-w-4xl px-5 mx-auto mt-10 lg:px-0">
+ {{$i=0}}
+  @foreach($winners as $winner)
+
+    <div class="py-3 sm:max-w-xl sm:mx-auto">
+      <div class="bg-white shadow-lg border-gray-100 max-h-80	 border sm:rounded-3xl p-8 flex space-x-8">
+        @if ($i < 3)
+        {{ $i++}}
+        <div class="w-full lg:w-1/3 lg:p-4">
+            <img class="h-64 lg:h-full object-cover object-center w-full" src="https://romdom.com.ua/image/catalog/icons/grnt.png" alt="">
+        </div>
+        @endif
+        <div class="flex flex-col w-1/2 space-y-4">
+          <div class="flex justify-between items-start">
+            <h2 class="text-3xl font-bold">{{ $winner->title }}</h2>
+            <div class="bg-yellow-400 font-bold rounded-xl p-2">{{$winner->total_points}}</div>
+          </div>
+          <div>
+            <div class="text-sm text-gray-400">Series</div>
+            <div class="text-lg text-gray-800">2019</div>
+          </div>
+            <p class=" text-gray-400 max-h-40 overflow-y-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="flex text-2xl font-bold text-a">83.90</div>
+        </div>
+  
+      </div>
+    </div> 
+
+  @endforeach
+</div>  
+
+
+</br>
 
 <div class="max-w-4xl px-5 mx-auto mt-10 lg:px-0">
   <div class="antialiased mx-auto max-w-screen-sm">
-  <h3 class="mb-4 text-lg font-semibold text-gray-900">Comments</h3>
+  <h3  id="comments" class="mb-4 text-lg font-semibold text-gray-900">Comments</h3>
 
   <div class="space-y-4">
 
