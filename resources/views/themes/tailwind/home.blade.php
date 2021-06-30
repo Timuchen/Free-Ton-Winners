@@ -20,7 +20,7 @@
                             </a>
                         </div>
                         <div class="mt-3 sm:mt-0 sm:ml-3">
-                            <a href="#" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border-2 border-transparent rounded-md hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 md:py-4 md:text-lg md:px-10">
+                            <a href="/contests" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border-2 border-transparent rounded-md hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 md:py-4 md:text-lg md:px-10">
                                 Learn More
                             </a>
                         </div>
@@ -65,24 +65,25 @@
             <div class="grid mt-16 gap-y-10 sm:grid-cols-2 sm:gap-x-8 md:gap-x-12 lg:grid-cols-3 xl:grid-cols-4 lg:gap-20">
                 
                     <div>
-                        <img src="/themes/tailwind/images/impersonation.png" class="w-16 rounded sm:mx-auto">
-                        <h3 class="mt-6 text-sm font-semibold leading-6 sm:text-center text-wave-100">Test</h3>
-                        <p class="mt-2 text-sm leading-5 sm:text-center text-wave-200">Test</p>
+                        <img src="/storage/1182718.png" class="w-16 rounded sm:mx-auto">
+                        
+                        <h3 class="mt-6 text-sm font-semibold leading-6 sm:text-center text-wave-100">Notifications</h3>
+                        <p class="mt-2 text-sm leading-5 sm:text-center text-wave-200">Get notified of completed contests</p>
                     </div>
                     <div>
-                        <img src="/themes/tailwind/images/impersonation.png" class="w-16 rounded sm:mx-auto">
-                        <h3 class="mt-6 text-sm font-semibold leading-6 sm:text-center text-wave-100">Test</h3>
-                        <p class="mt-2 text-sm leading-5 sm:text-center text-wave-200">Test</p>
+                        <img src="/storage/1182669.png" class="w-16 rounded sm:mx-auto">
+                        <h3 class="mt-6 text-sm font-semibold leading-6 sm:text-center text-wave-100">Likes</h3>
+                        <p class="mt-2 text-sm leading-5 sm:text-center text-wave-200">Celebrate your favorite works</p>
                     </div>
                     <div>
-                        <img src="/themes/tailwind/images/impersonation.png" class="w-16 rounded sm:mx-auto">
-                        <h3 class="mt-6 text-sm font-semibold leading-6 sm:text-center text-wave-100">Test</h3>
-                        <p class="mt-2 text-sm leading-5 sm:text-center text-wave-200">Test</p>
+                        <img src="/storage/5014894.png" class="w-16 rounded sm:mx-auto">
+                        <h3 class="mt-6 text-sm font-semibold leading-6 sm:text-center text-wave-100">Comments</h3>
+                        <p class="mt-2 text-sm leading-5 sm:text-center text-wave-200">Congratulate the winners!</p>
                     </div>
                     <div>
-                        <img src="/themes/tailwind/images/impersonation.png" class="w-16 rounded sm:mx-auto">
+                        <img src="/storage/765093.png" class="w-16 rounded sm:mx-auto">
                         <h3 class="mt-6 text-sm font-semibold leading-6 sm:text-center text-wave-100">Test</h3>
-                        <p class="mt-2 text-sm leading-5 sm:text-center text-wave-200">Test</p>
+                        <p class="mt-2 text-sm leading-5 sm:text-center text-wave-200">Develop your community!</p>
                     </div>
 
             </div>
@@ -109,75 +110,17 @@
             <div class="max-w-6xl px-10 pb-20 mx-auto bg-gray-100">
                 <div class="flex flex-col items-center lg:flex-row">
                     <div class="flex flex-col justify-center w-full h-full mb-10 lg:pr-8 sm:w-4/5 md:items-center lg:mb-0 lg:items-start md:w-3/5 lg:w-1/2">
-                        <p class="mb-2 text-base font-medium tracking-tight uppercase text-wave-500">Our customers love our product</p>
+                        <p class="mb-2 text-base font-medium tracking-tight uppercase text-wave-500">Watch and participate</p>
                         <h2
                             class="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:leading-none lg:text-5xl xl:text-6xl">
-                            Testimonials</h2>
-                        <p class="pr-5 my-6 text-lg text-gray-600 md:text-center lg:text-left">This is an example section of where you will add your testimonials for your Software as a Service.</p>
-                        <a href="#_"
-                            class="flex items-center justify-center px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow bg-wave-600 hover:bg-wave-500 focus:outline-none focus:border-wave-700 focus:shadow-outline-wave md:py-4 md:text-lg md:px-10">View
-                            Case Studies</a>
+                            Work catalog</h2>
+                        <p class="pr-5 my-6 text-lg text-gray-600 md:text-center lg:text-left">We have collected all the works of the winners in one place. See, rate, participate!</p>
+                        <a href="/contests"
+                            class="flex items-center justify-center px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow bg-wave-600 hover:bg-wave-500 focus:outline-none focus:border-wave-700 focus:shadow-outline-wave md:py-4 md:text-lg md:px-10">
+                            Go to catalog</a>
                     </div>
                     <div class="w-full sm:w-4/5 lg:w-1/2">
-                        <blockquote class="flex flex-row-reverse items-center justify-between w-full col-span-1 p-6 bg-white rounded-lg shadow sm:flex-row">
-                            <div class="flex flex-col pl-5 sm:pr-8">
-                                <div class="relative sm:pl-12">
-                                    <svg class="absolute left-0 hidden w-10 h-10 fill-current sm:block text-wave-500"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">Wave allowed me to build the Software as a Service of my dreams!
-                                    </p>
-                                </div>
-
-                                <h3 class="mt-3 text-base font-medium leading-5 text-gray-800 truncate sm:pl-12">Jane Cooper <span
-                                        class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 w-24 h-24 bg-gray-300 rounded-full"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
-                                alt="">
-                        </blockquote>
-                        <blockquote
-                            class="flex flex-row-reverse items-center justify-between w-full col-span-1 p-6 my-5 bg-white rounded-lg shadow sm:flex-row">
-                            <div class="flex flex-col pl-5 sm:pr-10">
-                                <div class="relative sm:pl-12">
-                                    <svg class="absolute left-0 hidden w-10 h-10 fill-current sm:block text-wave-500"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">Wave saved us hundreds of development hours. Creating a Software as a Service is now easier than ever with Wave.</p>
-                                </div>
-                                <h3 class="mt-3 text-base font-medium leading-5 text-gray-800 truncate sm:pl-12">John Doe <span
-                                        class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 w-24 h-24 bg-gray-300 rounded-full"
-                                src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&aauto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
-                                alt="">
-                        </blockquote>
-                        <blockquote
-                            class="flex flex-row-reverse items-center justify-between w-full col-span-1 p-6 bg-white rounded-lg shadow sm:flex-row">
-                            <div class="flex flex-col pl-5 sm:pr-10">
-                                <div class="relative sm:pl-12">
-                                    <svg class="absolute left-0 hidden w-10 h-10 fill-current sm:block text-wave-500"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">This is the best solution available for creating your own Software as a Service!</p>
-                                </div>
-
-                                <h3 class="mt-3 text-base font-medium leading-5 text-gray-800 truncate sm:pl-12">John Smith <span
-                                        class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span></h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 w-24 h-24 bg-gray-300 rounded-full"
-                                src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rrb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&aauto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
-                                alt="">
-                        </blockquote>
+                        <img src="http://tonwin.test/storage/pngfind.com-like-us-on-facebook-6833707.png" />                        
                     </div>
                 </div>
             </div>
@@ -200,20 +143,6 @@
     </div>
     <!-- END OF TESTIMONIALS SECTION -->
 
-    <!-- BEGINNING OF PRICING SECTION -->
-    <div id="pricing" class="relative">
 
-        <div class="relative z-20 px-8 pb-8 mx-auto max-w-7xl xl:px-5">
-            <div class="w-full text-left sm:text-center">
-                <h2 class="pt-12 text-4xl font-extrabold text-gray-900 lg:text-5xl">Example Pricing</h2>
-                <p class="w-full my-1 text-base text-left text-gray-900 opacity-75 sm:my-2 sm:text-center sm:text-xl">It's easy to customize the pricing of your Software as a Service</p>
-            </div>
-
-            @include('theme::partials.plans')
-
-            <p class="w-full my-8 text-left text-gray-500 sm:my-10 sm:text-center">All plans are fully configurable in the Admin Area.</p>
-        </div>
-    </div>
-    <!-- END OF PRICING SECTION -->
 
 @endsection

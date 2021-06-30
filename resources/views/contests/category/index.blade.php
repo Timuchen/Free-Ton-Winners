@@ -50,6 +50,7 @@
 						</span>
                         @endif
 						<span class="ml-3">{{ $cat->name }}</span>
+            <span class="flex items-center justify-center text-sm text-gray-500 font-semibold bg-gray-200 h-6 px-2 rounded-full ml-auto">3</span>
 					</a>
 				</li>
 				
@@ -59,7 +60,7 @@
         <li id="control" class="flex items-center justify-center text-sm text-gray-500 font-semibold hover:bg-blue-100 h-6 px-2 rounded-full">↓ Show all categories...</li>
 			</ul>
       </br>
-      @if(auth()->user()->can('browse_admin'))
+      @if(auth()->user())
       <ul class="flex flex-col w-full">
       <li class="my-px">
 					<span class="flex font-medium text-sm text-gray-400 px-4 my-4 ">Publisher menu</span>

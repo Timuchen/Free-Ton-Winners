@@ -11,15 +11,20 @@ class ContestController extends Controller
 {
     public function index()
     {
-        $contests = Contest::all();
+        $contests = Contest::all()->sortBy('title');
+        $categories = ContestCategory::all()->sortBy('name');
+        //$category = CategoryContest::with('contests')->get();
+        // $contestId = $contests->contest_category_id;
+        // $category = ContestCategory::where('id', '=', $contestId)->firstOrFail();
 
-        return view('contests.index', compact('contests'));
+        return view('contests.index', compact('contests', 'categories'));
     }
 
     public function create()
     {
         return view('contests.create');
     }
+
 
     public function store(Request $request)
     {

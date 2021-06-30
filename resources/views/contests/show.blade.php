@@ -69,13 +69,17 @@
   <h3 class="text-4xl font-medium leading-9 text-grey-500">Winners works</h3>  
   </div>
   <div class="max-w-4xl px-5 mx-auto mt-10 lg:px-0">
- {{$i=0}}
+ <?php 
+ $i=0; 
+ ?>
   @foreach($winners as $winner)
 
     <div class="py-3 sm:max-w-xl sm:mx-auto">
       <div class="bg-white shadow-lg border-gray-100 max-h-80	 border sm:rounded-3xl p-8 flex space-x-8">
         @if ($i < 3)
-        {{ $i++}}
+        <?php 
+        $i++; 
+        ?>
         <div class="w-full lg:w-1/3 lg:p-4">
             <img class="h-64 lg:h-full object-cover object-center w-full" src="https://romdom.com.ua/image/catalog/icons/grnt.png" alt="">
         </div>
@@ -90,7 +94,19 @@
             <div class="text-lg text-gray-800">2019</div>
           </div>
             <p class=" text-gray-400 max-h-40 overflow-y-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div class="flex text-2xl font-bold text-a">83.90</div>
+          <div class="flex text-2xl font-bold text-a">
+          <span class="inline-flex mt-5 rounded-md shadow-sm ">
+	                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50">
+                    Read the application
+	                </a>
+				 </span> 
+         <span class="inline-flex mt-5 rounded-md shadow-sm "> </span>
+        <span class="inline-flex mt-5 ml-5 rounded-md shadow-sm ">
+	                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50">
+                  Source files
+	                </a>
+				</span>
+          </div>
         </div>
   
       </div>
@@ -101,42 +117,18 @@
 
 
 </br>
-
+@if ($contest->id == 1)
 <div class="max-w-4xl px-5 mx-auto mt-10 lg:px-0">
   <div class="antialiased mx-auto max-w-screen-sm">
   <h3  id="comments" class="mb-4 text-lg font-semibold text-gray-900">Comments</h3>
 
   <div class="space-y-4">
-
     <div class="flex">
       <div class="flex-shrink-0 mr-3">
-        <img class="mt-2 rounded-full w-8 h-8 sm:w-10 sm:h-10" src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80" alt="">
+        <img class="mt-2 rounded-full w-8 h-8 sm:w-10 sm:h-10" src="/storage/users/default.png" alt="">
       </div>
       <div class="flex-1 border rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
-        <strong>Sarah</strong> <span class="text-xs text-gray-400">3:34 PM</span>
-        <p class="text-sm">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-          sed diam nonumy eirmod tempor invidunt ut labore et dolore
-          magna aliquyam erat, sed diam voluptua.
-        </p>
-        <div class="mt-4 flex items-center">
-          <div class="flex -space-x-2 mr-2">
-            <img class="rounded-full w-6 h-6 border border-white" src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80" alt="">
-            <img class="rounded-full w-6 h-6 border border-white" src="https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80" alt="">
-          </div>
-          <div class="text-sm text-gray-500 font-semibold">
-            5 Replies
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="flex">
-      <div class="flex-shrink-0 mr-3">
-        <img class="mt-2 rounded-full w-8 h-8 sm:w-10 sm:h-10" src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80" alt="">
-      </div>
-      <div class="flex-1 border rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
-        <strong>Sarah</strong> <span class="text-xs text-gray-400">3:34 PM</span>
+        <strong>Admin</strong> <span class="text-xs text-gray-400">3:34 PM</span>
         <p class="text-sm">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
           sed diam nonumy eirmod tempor invidunt ut labore et dolore
@@ -148,10 +140,10 @@
         <div class="space-y-4">
           <div class="flex">
             <div class="flex-shrink-0 mr-3">
-              <img class="mt-3 rounded-full w-6 h-6 sm:w-8 sm:h-8" src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80" alt="">
+              <img class="mt-3 rounded-full w-6 h-6 sm:w-8 sm:h-8" src="/storage/users/default.png" alt="">
             </div>
             <div class="flex-1 bg-gray-100 rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
-              <strong>Sarah</strong> <span class="text-xs text-gray-400">3:34 PM</span>
+              <strong>Admin</strong> <span class="text-xs text-gray-400">3:34 PM</span>
               <p class="text-xs sm:text-sm">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                 sed diam nonumy eirmod tempor invidunt ut labore et dolore
@@ -161,10 +153,10 @@
           </div>
           <div class="flex">
             <div class="flex-shrink-0 mr-3">
-              <img class="mt-3 rounded-full w-6 h-6 sm:w-8 sm:h-8" src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80" alt="">
+              <img class="mt-3 rounded-full w-6 h-6 sm:w-8 sm:h-8" src="/storage/users/default.png" alt="">
             </div>
             <div class="flex-1 bg-gray-100 rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
-              <strong>Sarah</strong> <span class="text-xs text-gray-400">3:34 PM</span>
+              <strong>Admin</strong> <span class="text-xs text-gray-400">3:34 PM</span>
               <p class="text-xs sm:text-sm">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                 sed diam nonumy eirmod tempor invidunt ut labore et dolore
@@ -177,6 +169,7 @@
     </div>
   </div>
 </div>
+@endif
 </div>
 <br>
 @endsection
