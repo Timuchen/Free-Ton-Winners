@@ -4,7 +4,7 @@
 
 ## Demo
 
-View a live [demo here](tonwinners.com).
+View a live [demo here](http://tonwinners.com).
 
 Admin:
 
