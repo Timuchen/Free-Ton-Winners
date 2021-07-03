@@ -75,12 +75,5 @@ php artisan migrate
 ```
 
 <br>
-Finally, we will need to seed our database with the following command:
-
-```php
-php artisan db:seed
-```
-
-<br>
 
 🎉 And that's it! You will now be able to visit your URL and see your Free-Ton-Winners application up and running.
