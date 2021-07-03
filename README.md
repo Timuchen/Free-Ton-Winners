@@ -66,7 +66,7 @@ Next, we will need to install all our composer dependencies by running the follo
 composer install
 ```
 
-### 4. Run Migrations and Seeds
+### 4. Run Migrations
 
 We need to migrate our database structure into our database, which we can do by running:
 
