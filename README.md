@@ -6,24 +6,10 @@
 
 View a live [demo here](http://tonwinners.com).
 
-Admin:
-
-```
-Login: admin@freeton.net
-Password: password
-```
-
-Publisher:
-
-```
-Login: publisher@freeton.net
-Password: password
-```
-
 User:
 
 ```
-Login: user@freeton.net
+Login: user@demo.com
 Password: password
 ```
 
